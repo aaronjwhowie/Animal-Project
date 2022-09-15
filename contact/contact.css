@@ -1,0 +1,19 @@
+.contact {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.contact .left {
+  display: grid;
+  grid-area: 1/ 1/ 6 /4;
+}
+
+.contact .right {
+  display: grid;
+  grid-area: 1/4/6/7;
+}
+
+h1 {
+  font-size: 25px;
+}
