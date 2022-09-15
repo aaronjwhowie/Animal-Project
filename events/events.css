@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-size: 22px;
+  text-align: center;
+}
+
+main {
+  font-size: 20px;
+  text-align: center;
+}
+
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 25px;
+}
+
+section {
+  width: 45vw;
+  border-style: double;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+figure {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-style: solid;
+  padding: 5px;
+}
+
+.info {
+  width: 35vw;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+/* extra-small devices */
+@media (max-width: 600px) {
+  header {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  main {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .events {
+    width: 100vw;
+    margin: 0;
+    row-gap: 10px;
+  }
+
+  .info {
+    width: 50vw;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  section {
+    width: 80vw;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 75px;
+    height: 75px;
+  }
+
+  .info {
+    /*width: 100vw;*/
+    text-align: center;
+  }
+}
+
+/* large & extra-large devices */
+@media (min-width: 1000px) {
+  header {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  main {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .events {
+    width: 100vw;
+    margin: 0;
+    row-gap: 10px;
+  }
+
+  section {
+    width: 80vw;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 125px;
+    height: 125px;
+    padding: 10px;
+  }
+
+  h4 {
+    text-align: left;
+  }
+
+  p {
+    width: 45vw;
+    font-size: 18px;
+  }
+
+  .info {
+    width: 50vw;
+  }
+}
