@@ -1,16 +1,23 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #eeeeee;
 }
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 header {
-  font-size: 22px;
+  font-size: 24px;
   text-align: center;
+  font-family: "Nunito", sans-serif;
+  background: -webkit-linear-gradient(#86bcfa, #3a92f6, #5eec59);
+  font-weight: bolder;
 }
 
 main {
-  font-size: 20px;
+  font-size: 19px;
   text-align: center;
+  font-family: "Nunito", sans-serif;
+  background-color: #dddddd;
 }
 
 .events {
@@ -23,9 +30,11 @@ main {
 section {
   width: 45vw;
   border-style: double;
+  border-color: #3a92f6;
   display: flex;
   justify-content: center;
   padding: 5px;
+  background-color: #86bcfa;
 }
 
 figure {
@@ -41,6 +50,7 @@ img {
   object-fit: contain;
   border-style: solid;
   padding: 5px;
+  background-color: white;
 }
 
 .info {
@@ -49,12 +59,27 @@ img {
   margin-right: 5px;
 }
 
-h2 {
-  font-size: 18px;
+mark {
+  background-color: #5eec59;
+  font-weight: bolder;
 }
 
-h4 {
+h2 {
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+}
+
+p {
   font-size: 14px;
+  font-family: "Nunito", sans-serif;
+}
+
+button {
+  background-color: white;
+  border: 1px solid #3a92f6;
+  border-radius: 10px;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
 }
 
 /* extra-small devices */
@@ -81,11 +106,6 @@ h4 {
 
   h2 {
     font-size: 16px;
-  }
-
-  h4 {
-    font-size: 13px;
-    text-align: center;
   }
 
   p {
@@ -147,10 +167,6 @@ h4 {
     width: 125px;
     height: 125px;
     padding: 10px;
-  }
-
-  h4 {
-    text-align: left;
   }
 
   p {
