@@ -1,61 +1,100 @@
-/* Nav Bar */
-header li a {
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-  display: list-item;
-  list-style: none;
-  padding: 2px;
-  margin: 0px;
-  text-decoration: none;
-  color: rgb(44, 62, 13);
-  font-size: 50px;
-  font-family: "Nunito", sans-serif;
-  text-transform: capitalize;
-}
-ul {
-  display: list-item;
-  list-style: none;
-}
-.link a:hover {
-  color: rgb(44, 62, 13);
-}
-.link ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  list-style: none;
-}
-.link ul li a {
-  padding: 5px;
-  margin: 13px;
-  text-decoration: none;
-  font-size: 30px;
-  color: rgb(242 255 218);
-  font-family: "Nunito", sans-serif;
-  text-transform: lowercase;
+body {
+  background: linear-gradient(#86bcfa, #3a92f6, #5eec59);
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-/* Grid Styling */
-h1 {
-  font-size: 25px;
-}
-.contact {
+.display {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 .header {
+  display: grid;
   grid-area: 1 / 1 / 2 / 7;
 }
-.contact .left {
-  grid-area: 2 / 1 / 7 / 4;
+.left {
+  display: grid;
+  grid-area: 2 / 1 / 5 / 4;
 }
-
-.contact .right {
-  grid-area: 7 / 1 / 8 / 7;
+.right {
+  display: grid;
+  grid-area: 2 / 4 / 5 / 7;
 }
 .footer {
-  grid-area: 2 / 4 / 7 / 7;
+  display: grid;
+  grid-area: 5 / 1 / 6 / 7;
 }
+
+/* Nav Bar and Header */
+.hero-image {
+  background-image: url("images/groupheroimage.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 50vh;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.logo {
+  color: white;
+  margin-left: 30px;
+}
+/* Nav Bar */
+a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+#ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: right;
+  align-items: stretch;
+  align-content: stretch;
+  padding: 10px;
+}
+
+.header-color {
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: right;
+  align-items: stretch;
+  align-content: stretch;
+  padding: 10px;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  padding: 10px;
+}
+
+#ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+/* header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffffff00;
+  border: 1px solid #ffffff;
+  align-items: center;
+} */
