@@ -1,23 +1,69 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #eeeeee;
+  background: linear-gradient(#86bcfa, #3a92f6, #5eec59);
 }
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-header {
-  font-size: 24px;
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+
+.logo li a {
+  display: flex;
+  flex-direction: row;
+  display: list-item;
+  list-style: none;
+  padding: 2px;
+  margin: 0px;
+  text-decoration: none;
+  color: rgb(44, 62, 13);
+  font-size: 50px;
+  font-family: "Homemade Apple", cursive;
+  text-transform: capitalize;
+}
+ul {
+  display: list-item;
+  list-style: none;
+}
+.link a:hover {
+  color: rgb(242 255 218);
+}
+.link ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+  width: 90vw;
+}
+.link ul li a {
+  padding: 5px;
+  margin: 13px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(44, 62, 13);
+  font-family: "Nunito", sans-serif;
+  text-transform: lowercase;
+}
+
+.page-title {
+  font-size: 30px;
+  color: rgb(44, 62, 13);
   text-align: center;
   font-family: "Nunito", sans-serif;
-  background: -webkit-linear-gradient(#86bcfa, #3a92f6, #5eec59);
   font-weight: bolder;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+  background-color: rgb(242 255 218);
+  margin: 0;
+  padding: 0;
 }
 
 main {
   font-size: 19px;
   text-align: center;
   font-family: "Nunito", sans-serif;
-  background-color: #dddddd;
+  background-color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .events {
@@ -25,16 +71,18 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   row-gap: 25px;
+  background: transparent;
+  margin: 0;
 }
 
 section {
   width: 45vw;
   border-style: double;
-  border-color: #3a92f6;
+  border-color: black;
   display: flex;
   justify-content: center;
   padding: 5px;
-  background-color: #86bcfa;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 figure {
@@ -48,9 +96,10 @@ img {
   width: 150px;
   height: 150px;
   object-fit: contain;
-  border-style: solid;
+  border-style: double;
+  border-color: black;
   padding: 5px;
-  background-color: white;
+  background-color: transparent;
 }
 
 .info {
@@ -60,13 +109,14 @@ img {
 }
 
 mark {
-  background-color: #5eec59;
+  background-color: rgb(242 255 218);
   font-weight: bolder;
 }
 
 h2 {
   font-size: 18px;
   font-family: "Nunito", sans-serif;
+  text-decoration: underline;
 }
 
 p {
@@ -74,18 +124,103 @@ p {
   font-family: "Nunito", sans-serif;
 }
 
-button {
-  background-color: white;
-  border: 1px solid #3a92f6;
-  border-radius: 10px;
+button:hover {
+  background-color: rgb(242 255 218);
+  transition: 0.5s;
+}
+
+.extra-icons,
+.buttonOne,
+.buttonTwo,
+.buttonThree,
+.buttonFour {
+  font-size: 12px;
+  margin: 5px;
+  padding: 2px;
+  color: rgb(44, 62, 13);
+  background-color: transparent;
   font-family: "Nunito", sans-serif;
-  font-size: 15px;
+  text-decoration: none;
+}
+
+.icons {
+  font-size: 18px;
+  text-align: center;
+  color: rgb(44, 62, 13);
+  background-color: transparent;
+  margin: 5px;
+}
+
+.moreOne,
+.moreTwo,
+.moreThree,
+.moreFour {
+  display: none;
+}
+/*Footer */
+
+.socialmedia {
+  text-align: center;
+}
+
+#facebook,
+#twitter,
+#instagram,
+#snapchat {
+  padding: 13px;
+  font-size: 25px;
+  width: 64px;
+  text-decoration: none;
+  margin: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-instagram {
+  background: rebeccapurple;
+  color: white;
+}
+
+.fa-snapchat {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 /* extra-small devices */
 @media (max-width: 600px) {
-  header {
-    font-size: 20px;
+  .logo li a {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .link ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+
+  .link ul li a {
+    font-size: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+  }
+
+  .page-title {
+    font-size: 22px;
     text-align: center;
   }
 
@@ -98,6 +233,20 @@ button {
     width: 100vw;
     margin: 0;
     row-gap: 10px;
+  }
+
+  .icons {
+    font-size: 12px;
+    margin: 2px;
+  }
+
+  .extra-icons,
+  .buttonOne,
+  .buttonTwo,
+  .buttonThree,
+  .buttonFour {
+    font-size: 12px;
+    margin: 2px;
   }
 
   .info {
@@ -117,6 +266,7 @@ button {
     padding: 5px;
     display: flex;
     justify-content: center;
+    background-color: transparent;
   }
 
   img {
@@ -132,12 +282,23 @@ button {
     /*width: 100vw;*/
     text-align: center;
   }
+
+  #facebook,
+  #twitter,
+  #instagram,
+  #snapchat {
+    padding: 13px;
+    font-size: 20px;
+    width: 32px;
+    margin: 5px;
+    border-radius: 10px;
+  }
 }
 
 /* large & extra-large devices */
 @media (min-width: 1000px) {
-  header {
-    font-size: 24px;
+  .page-title {
+    font-size: 40px;
     text-align: center;
   }
 
@@ -157,6 +318,7 @@ button {
     padding: 5px;
     display: flex;
     justify-content: center;
+    background-color: rgba(134, 188, 250, 0.3);
   }
 
   img {
@@ -176,5 +338,13 @@ button {
 
   .info {
     width: 50vw;
+  }
+
+  .extra-icons,
+  .buttonOne,
+  .buttonTwo,
+  .buttonThree,
+  .buttonFour {
+    font-size: 18px;
   }
 }
