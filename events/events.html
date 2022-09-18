@@ -8,11 +8,28 @@
     <title>Events</title>
   </head>
   <body>
+    <!-- logo -->
+    <div class="logo">
+      <ul>
+        <li><a href="index.html">🐾 Animal Advocacy Association</a></li>
+      </ul>
+    </div>
+
     <!--navigation-->
-    <nav></nav>
+    <nav>
+      <div class="link">
+        <ul>
+          <li><a href="/homepage/index.html">Home</a></li>
+          <li><a href="/About Us Group Project/index.html">About Us</a></li>
+          <li><a href="/events/events.html">Events</a></li>
+          <li><a href="/Get-involved/get-involved.html">Get Involved</a></li>
+          <li><a href="/contact/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <!--main header-->
-    <header>Upcoming Events</header>
+    <header class="page-title">Upcoming Events</header>
     <main>Fall Quarter 2022</main>
 
     <br />
@@ -21,9 +38,11 @@
     <div class="events">
       <!--first event-->
       <section>
+        <!--image-->
         <figure>
           <img src="images/Animals.png" alt="animal outlines in a heart" />
         </figure>
+        <!--event info-->
         <div class="info">
           <h2>Anti-Cruelty March</h2>
           <p>
@@ -32,9 +51,20 @@
           <p>
             Join us on a march through downtown to protest animal cruelty and
             meet kindred people with the same values when it comes to protecting
-            animal rights.
+            animal rights. Water will be provided!
           </p>
-          <button type="button">Add to Calendar</button>
+        </div>
+        <!--event button(s)-->
+        <div class="event-icons">
+          <a href="https://accounts.google.com/"
+            ><button class="icons"><i class="fa fa-calendar"></i></button
+          ></a>
+          <a href="https://maps.google.com/"
+            ><button class="icons"><i class="fa fa-map-marker"></i></button
+          ></a>
+          <a href="/contact/contact.html"
+            ><button class="icons"><i class="fa fa-envelope"></i></button
+          ></a>
         </div>
       </section>
 
@@ -58,7 +88,17 @@
             pledge to not harm animals in the making of their products! We're
             sure you'll pick up something for yourself or for someone else.
           </p>
-          <button type="button">Add to Calendar</button>
+        </div>
+        <div class="event-icons">
+          <a href="https://accounts.google.com/"
+            ><button class="icons"><i class="fa fa-calendar"></i></button
+          ></a>
+          <a href="https://maps.google.com/"
+            ><button class="icons"><i class="fa fa-map-marker"></i></button
+          ></a>
+          <a href="/contact/contact.html"
+            ><button class="icons"><i class="fa fa-envelope"></i></button
+          ></a>
         </div>
       </section>
 
@@ -82,10 +122,33 @@
           </p>
           <p>
             Get dressed up for a wonderful cause and help raise some money to
-            help animal species in dire need! There will be live performances
-            and food catered by some of the best vegan restaurants in the area.
+            help animal species in dire need! <span class="dotsOne">...</span
+            ><span class="moreOne"
+              >There will be live performances and food catered by some of the
+              best vegan restaurants in the area. Purchase your tickets below or
+              just donate to the cause!</span
+            >
           </p>
-          <button type="button">Purchase Tickets Here</button>
+          <button onclick="moreInfoOne()" class="buttonOne">Read More</button>
+          <a href="https://www.gofundme.com/c/animal-rescue-fundraisers"
+            ><button class="extra-icons">
+              Purchase Tickets <i class="fas fa-wallet"></i></button
+          ></a>
+          <a href="https://www.gofundme.com/discover/animal-fundraiser"
+            ><button class="extra-icons">
+              Donate Here <i class="fas fa-donate"></i></button
+          ></a>
+        </div>
+        <div class="event-icons">
+          <a href="https://accounts.google.com/"
+            ><button class="icons"><i class="fa fa-calendar"></i></button
+          ></a>
+          <a href="https://maps.google.com/"
+            ><button class="icons"><i class="fa fa-map-marker"></i></button
+          ></a>
+          <a href="/contact/contact.html"
+            ><button class="icons"><i class="fa fa-envelope"></i></button
+          ></a>
         </div>
       </section>
 
@@ -106,10 +169,29 @@
           </p>
           <p>
             It's time to show your neighbors your favorite plant-based recipe!
-            Bring your best vegetarian/vegan dish (with allergen warnings) and
-            there will be prizes for the most popular dishes.
+            Bring your best vegetarian/vegan dish
+            <span class="dotsTwo">...</span
+            ><span class="moreTwo"
+              >(with allergen warnings) and there will be prizes for the most
+              popular dishes. Click below to register to bring a dish!</span
+            >
           </p>
-          <button type="button">Sign Up Here</button>
+          <button onclick="moreInfoTwo()" class="buttonTwo">Read More</button>
+          <a href="https://www.loveandlemons.com/plant-based-recipes/"
+            ><button class="extra-icons">
+              Register Here <i class="fas fa-leaf"></i></button
+          ></a>
+        </div>
+        <div class="event-icons">
+          <a href="https://accounts.google.com/"
+            ><button class="icons"><i class="fa fa-calendar"></i></button
+          ></a>
+          <a href="https://maps.google.com/"
+            ><button class="icons"><i class="fa fa-map-marker"></i></button
+          ></a>
+          <a href="/contact/contact.html"
+            ><button class="icons"><i class="fa fa-envelope"></i></button
+          ></a>
         </div>
       </section>
 
@@ -137,7 +219,17 @@
             our annual Friends Not Food Fest! You're guranteed to leave the
             festival with at least one new cruelty-free food swap.
           </p>
-          <button type="button">Add to Calendar</button>
+        </div>
+        <div class="event-icons">
+          <a href="https://accounts.google.com/"
+            ><button class="icons"><i class="fa fa-calendar"></i></button
+          ></a>
+          <a href="https://maps.google.com/"
+            ><button class="icons"><i class="fa fa-map-marker"></i></button
+          ></a>
+          <a href="/contact/contact.html"
+            ><button class="icons"><i class="fa fa-envelope"></i></button
+          ></a>
         </div>
       </section>
 
@@ -159,10 +251,33 @@
           <p>
             Spoil these shelter pets with treats and not tricks this spooky
             season! You can bring your own furry (or not so furry) friend as
-            long as they're friendly. Dress your pet(s) in costume to
-            participate in our spooky fashion show for a chance to win a prize!
+            long as they're friendly. Dress your pet(s) in costume<span
+              class="dotsThree"
+              >...</span
+            ><span class="moreThree">
+              to participate in our spooky fashion show for a chance to win a
+              prize! We're also accepting donations for the local animal
+              shelters!</span
+            >
           </p>
-          <button type="button">Add to Calendar</button>
+          <button onclick="moreInfoThree()" class="buttonThree">
+            Read More
+          </button>
+          <a href="https://www.gofundme.com/discover/animal-fundraiser"
+            ><button class="extra-icons">
+              Donate Here <i class="fas fa-donate"></i></button
+          ></a>
+        </div>
+        <div class="event-icons">
+          <a href="https://accounts.google.com/"
+            ><button class="icons"><i class="fa fa-calendar"></i></button
+          ></a>
+          <a href="https://maps.google.com/"
+            ><button class="icons"><i class="fa fa-map-marker"></i></button
+          ></a>
+          <a href="/contact/contact.html"
+            ><button class="icons"><i class="fa fa-envelope"></i></button
+          ></a>
         </div>
       </section>
 
@@ -183,9 +298,20 @@
           </p>
           <p>
             Holiday season is quickly approaching and who wouldn't love a
-            locally produced or handmade gift from one of our vendors?
+            locally produced or handmade gift from one of our vendors? Or you
+            could totally treat yourself to something (you deserve it)!
           </p>
-          <button type="button">Add to Calendar</button>
+        </div>
+        <div class="event-icons">
+          <a href="https://accounts.google.com/"
+            ><button class="icons"><i class="fa fa-calendar"></i></button
+          ></a>
+          <a href="https://maps.google.com/"
+            ><button class="icons"><i class="fa fa-map-marker"></i></button
+          ></a>
+          <a href="/contact/contact.html"
+            ><button class="icons"><i class="fa fa-envelope"></i></button
+          ></a>
         </div>
       </section>
 
@@ -210,15 +336,60 @@
           <p>
             Come tour this amazing facility that takes in disabled animals and
             gives them a better quality of life! They try hard to not send any
-            animals in need away, so please come and give them a donation.
+            animals in need away,<span class="dotsFour">...</span
+            ><span class="moreFour">
+              so please book a time slot to come visit below or you can just
+              donate directly to the homestead if you can't make it in person
+              (though you will be missing out on a great experience).</span
+            >
           </p>
-          <button type="button">Select a Time</button>
+          <button onclick="moreInfoFour()" class="buttonFour">Read More</button>
+          <a href="https://www.darbysafari.com/appointments"
+            ><button class="extra-icons">
+              Select a Time <i class="fas fa-clock"></i></button
+          ></a>
+          <a href="https://www.gofundme.com/discover/animal-fundraiser"
+            ><button class="extra-icons">
+              Donate Here <i class="fas fa-donate"></i></button
+          ></a>
+        </div>
+        <div class="event-icons">
+          <a href="https://accounts.google.com/"
+            ><button class="icons"><i class="fa fa-calendar"></i></button
+          ></a>
+          <a href="https://maps.google.com/"
+            ><button class="icons"><i class="fa fa-map-marker"></i></button
+          ></a>
+          <a href="/contact/contact.html"
+            ><button class="icons"><i class="fa fa-envelope"></i></button
+          ></a>
         </div>
       </section>
       <br />
       <!--end of events-->
     </div>
-    <!--footer-->
-    <footer></footer>
+    <!--Footer-->
+    <br />
+    <footer>
+      <div class="socialmedia">
+        <a href="https://www.facebook.com/" aria-label="facebook"
+          ><i class="fa-brands fa-facebook" id="facebook"></i
+        ></a>
+        <a href="https://twitter.com/?lang=en" aria-label="twitter"
+          ><i class="fa-brands fa-twitter" id="twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/" aria-label="instagram"
+          ><i class="fa-brands fa-instagram" id="instagram"></i
+        ></a>
+        <a href="https://www.snapchat.com/" aria-label="snapchat"
+          ><i class="fa-brands fa-snapchat" id="snapchat"></i
+        ></a>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/f01107a712.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="events.js"></script>
   </body>
 </html>
