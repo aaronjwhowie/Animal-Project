@@ -1,6 +1,7 @@
 body {
-  background: linear-gradient(#86bcfa, #3a92f6, #5eec59);
-  background-attachment: fixed;
+  /* background: linear-gradient(#86bcfa, #3a92f6, #5eec59);
+  background-attachment: fixed; */
+  background-color: wheat;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -8,27 +9,34 @@ body {
 
 .display {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(11, 20%);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 
 .header {
   display: grid;
-  grid-area: 1 / 1 / 2 / 7;
+  grid-area: 1 / 14 / 2 / 7;
 }
 .left {
   display: grid;
-  grid-area: 2 / 1 / 5 / 4;
+  grid-area: 2 / 2 / 8 / 8;
+  background: #ffffffa3;
 }
 .right {
   display: grid;
-  grid-area: 2 / 4 / 5 / 7;
+  grid-area: 3 / 12 / 9 / 7;
+  background: #ffffffa3;
 }
 .footer {
   display: grid;
   grid-area: 5 / 1 / 6 / 7;
+}
+
+.left-h {
+  display: grid;
+  grid-area: 1 / 1 / 1 / 1;
 }
 
 /* Nav Bar and Header */
@@ -98,3 +106,15 @@ li {
   border: 1px solid #ffffff;
   align-items: center;
 } */
+
+form input {
+  text-decoration: none;
+}
+
+.submit {
+  color: rgb(0, 0, 0);
+  background-color: pink;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+}
