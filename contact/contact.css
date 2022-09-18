@@ -1,110 +1,24 @@
-/* Nav Bar */
-header li a {
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-  display: list-item;
-  list-style: none;
-  padding: 2px;
-  margin: 0px;
-  text-decoration: none;
-  color: rgb(44, 62, 13);
-  font-size: 50px;
-  font-family: "Nunito", sans-serif;
-  text-transform: capitalize;
-}
-ul {
-  display: list-item;
-  list-style: none;
-}
-.link a:hover {
-  color: rgb(44, 62, 13);
-}
-.link ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  list-style: none;
-}
-.link ul li a {
-  padding: 5px;
-  margin: 13px;
-  text-decoration: none;
-  font-size: 30px;
-  color: rgb(242 255 218);
-  font-family: "Nunito", sans-serif;
-  text-transform: lowercase;
-}
-
-/* Grid Styling */
-.contact {
+.display {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
-.contact .left {
+.header {
   display: grid;
-  grid-area: 1/ 1/ 6 /4;
+  grid-area: 1 / 1 / 2 / 7;
 }
-
-.contact .right {
+.left {
   display: grid;
-  grid-area: 1/4/6/7;
+  grid-area: 2 / 1 / 5 / 4;
 }
-
-h1 {
-  font-size: 25px;
+.right {
+  display: grid;
+  grid-area: 2 / 4 / 5 / 7;
 }
-
-/* Nav Bar */
-.a-i {
-  text-decoration: none;
-  list-style: none;
-  color: white;
-}
-
-#ul-i {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: right;
-  align-items: stretch;
-  align-content: stretch;
-  padding: 10px;
-}
-
-.header-color {
-  color: white;
-}
-
-.nav-i .ul-i {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: right;
-  align-items: stretch;
-  align-content: stretch;
-  padding: 10px;
-}
-
-.li-i {
-  text-decoration: none;
-  list-style: none;
-  padding: 10px;
-}
-
-#ul-i .li-i .a-i {
-  text-decoration: none;
-  list-style: none;
-  color: white;
-}
-
-.header-i {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  background-color: #99e9ff78;
-  border: 5px solid #00000024;
-  align-items: center;
+.footer {
+  display: grid;
+  grid-area: 5 / 1 / 6 / 7;
 }
