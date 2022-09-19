@@ -15,21 +15,18 @@
     <!-- <div class="display"> -->
     <!-- Heaader -->
     <header class="header">
-      <div>
-        <nav>
-          <div>
-            <ul>
-              <li><a href="/homepage/index.html">Home</a></li>
-              <li><a href="/About Us Group Project/index.html">About Us</a></li>
-              <li><a href="/events/events.html">Events</a></li>
-              <li>
-                <a href="/Get-involved/get-involved.html">Get Involved</a>
-              </li>
-              <li><a href="/contact/contact.html">Contact Us</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+      <nav>
+        <ul>
+          <div class="nv-l">✼ Animal Advocacy Association</div>
+          <li><a href="/homepage/index.html">Home</a></li>
+          <li><a href="/About Us Group Project/index.html">About Us</a></li>
+          <li><a href="/events/events.html">Events</a></li>
+          <li>
+            <a href="/Get-involved/get-involved.html">Get Involved</a>
+          </li>
+          <li><a href="/contact/contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Body -->
@@ -42,22 +39,44 @@
       </p>
     </section>
     <section class="right">
-      <h1>Contact Us</h1>
+      <h1 class="RCH">Contact Us</h1>
       <form>
+        <label> Name</label>
+        <br />
         <input required type="text" id="fName" placeholder="First Name" />
         <input required type="text" id="lName" placeholder="Last Name" />
         <br />
         <br />
-        <input required type="email" id="email" placeholder="Email" />
+        <label> Email</label>
+        <br />
+        <input
+          class="F-L"
+          required
+          type="email"
+          id="email"
+          placeholder="Type email address"
+        />
         <br />
         <br />
-        <label for="PN">Phone number:</label>
+        <label for="PN">Phone number</label>
         <br />
-        <input required type="number" id="PN" placeholder="e.g. 000-000-0000" />
+        <input
+          class="F-L"
+          required
+          type="number"
+          id="PN"
+          placeholder="e.g. 000-000-0000"
+        />
         <br />
         <br />
-        <label for="message"> Message:</label>
-        <input id="message" type="text" />
+        <label for="message"> Message</label>
+        <br />
+        <input
+          class="F-L"
+          id="message"
+          type="text"
+          placeholder="A brief description here"
+        />
         <br />
         <h3>Services</h3>
         <input id="volunteering" type="checkbox" />
