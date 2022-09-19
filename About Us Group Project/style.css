@@ -8,12 +8,12 @@ body {
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
 
 /* Navigation Bar */
 header li a {
   display: flex;
   flex-direction: row;
-  align-self: flex-start;
   display: list-item;
   list-style: none;
   padding: 2px;
@@ -21,7 +21,7 @@ header li a {
   text-decoration: none;
   color: rgb(44, 62, 13);
   font-size: 50px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Homemade Apple', cursive;
   text-transform: capitalize;
   
 }
@@ -32,13 +32,13 @@ ul {
 }
 
 .link a:hover {
-  color: rgb(44, 62, 13);
+  color: rgb(242 255 218);
 }
 
 .link ul {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   list-style: none;
 }
 
@@ -47,7 +47,7 @@ ul {
   margin: 13px;
   text-decoration: none;
   font-size: 30px;
-  color: rgb(242 255 218);
+  color: rgb(44, 62, 13);
   font-family: 'Nunito', sans-serif;
   text-transform: lowercase;
 }
@@ -79,7 +79,54 @@ ul {
   margin: 10px;
   background: rgba(255, 255, 255, 0.5);
   }
-  
+
+  /*Text Box One*/
+  .container {
+    position: relative;
+  }
+
+  .text-block {
+    position: absolute;
+    top: -73px;
+    left: 5px;
+    background: rgba(0,9,50,0.2);
+    font-size: 20px;
+    color: white;
+    margin: 100px;
+    padding: 10px 40px 10px 40px;
+    width: 33vw;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .subheading1 {
+    text-align: justify;
+    font-size: 19px;
+  }
+
+   /*Text Box Two*/
+   .container {
+    position: relative;
+  }
+
+  .text-block2 {
+    position: absolute;
+    top: -73px;
+    right: -3px;
+    background: rgba(0,9,50,0.2);
+    font-size: 20px;
+    color: black;
+    margin: 100px;
+    padding: 10px 40px 10px 40px;
+    width: 33vw;
+    height: 103vh;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    text-align: left;
+  }
+
 
 /*Footer */
 
@@ -92,9 +139,9 @@ ul {
   #instagram,
   #snapchat
   {
-    padding: 20px;
+    padding: 13px;
     font-size: 30px;
-    width: 70px;
+    width: 64px;
     text-decoration: none;
     margin: 15px;
     border-radius: 10px;
