@@ -1,45 +1,62 @@
+* {
+  font-family: "Nunito", sans-serif;
+}
+/* Body Styling */
+
 body {
-  /* background: linear-gradient(#86bcfa, #3a92f6, #5eec59);
-  background-attachment: fixed; */
-  background-color: wheat;
+  background: linear-gradient(#86bcfa, #3a92f6, #5eec59);
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: 90vh;
 }
 
 .display {
   display: grid;
   grid-template-columns: repeat(13, 1fr);
-  grid-template-rows: repeat(11, 20%);
+  grid-template-rows: repeat(11, 12%);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 
 .header {
   display: grid;
-  grid-area: 1 / 14 / 2 / 7;
+  grid-area: 1 / 14 / 1 / 1;
+  border-bottom: black solid 2px;
 }
+
 .left {
   display: grid;
-  grid-area: 2 / 2 / 8 / 8;
+  grid-area: 2 / 1 / 14 / 8;
   background: #ffffffa3;
 }
+
+img {
+  margin-left: 70px;
+  border: black solid 1px;
+  border-radius: 250px;
+  background: linear-gradient(#86bcfa, #3a92f6, #5eec59);
+  background-attachment: fixed;
+}
+.pull {
+  font-size: 24px;
+  text-align: center;
+}
+
 .right {
   display: grid;
-  grid-area: 3 / 12 / 9 / 7;
-  background: #ffffffa3;
+  grid-area: 4 / 8 / 11 / 13;
+  align-content: space-between;
+  border-radius: 14px;
 }
+
 .footer {
   display: grid;
   grid-area: 5 / 1 / 6 / 7;
 }
 
-.left-h {
-  display: grid;
-  grid-area: 1 / 1 / 1 / 1;
-}
+/* Nav Bar*/
 
-/* Nav Bar and Header */
 .hero-image {
   background-image: url("images/groupheroimage.jpeg");
   background-repeat: no-repeat;
@@ -52,14 +69,14 @@ body {
 }
 
 .logo {
-  color: white;
+  color: black;
   margin-left: 30px;
 }
 /* Nav Bar */
 a {
   text-decoration: none;
   list-style: none;
-  color: white;
+  color: black;
 }
 
 #ul {
@@ -73,7 +90,7 @@ a {
 }
 
 .header-color {
-  color: white;
+  color: black;
 }
 
 nav ul {
@@ -84,29 +101,125 @@ nav ul {
   align-items: stretch;
   align-content: stretch;
   padding: 10px;
+  margin-top: -56px;
 }
 
 li {
   text-decoration: none;
   list-style: none;
   padding: 10px;
+  font-size: 23px;
 }
 
 #ul li a {
   text-decoration: none;
   list-style: none;
-  color: white;
+  color: black;
 }
 
-/* header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #ffffff00;
-  border: 1px solid #ffffff;
-  align-items: center;
-} */
+/* Form Styling */
+.F-L {
+  width: 391px;
+}
+form {
+  margin-left: 95px;
+  margin-top: -400px;
+}
+
+input {
+  border: none;
+  background-color: #ffffff87;
+  border-bottom: 1px solid black;
+  font-size: 18px;
+  box-shadow: #00000040 4px 7px;
+  border-radius: 5px;
+}
+
+label {
+  font-size: 18px;
+}
+.text1 {
+  display: grid;
+  grid-area: 3 / 12 / 9 / 7;
+  background: #ffffffa3;
+}
 
 form input {
   text-decoration: none;
+}
+
+.submit {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  margin-left: 150px;
+  width: 100px;
+}
+
+.center-box {
+  margin-left: 150px;
+}
+.center-box2 {
+  margin-left: 60px;
+}
+/* Header */
+.RCH {
+  margin-left: 181px;
+  margin-top: -92px;
+  font-size: 45px;
+}
+
+.left-h1 {
+  margin-top: 90px;
+  font-size: 34px;
+  font-weight: 100;
+  margin-left: 123px;
+}
+
+.nv-l {
+  margin-left: 130px;
+  font-size: 30px;
+  margin-top: 18px;
+}
+
+.socialmedia {
+  text-align: center;
+}
+
+/* Footer */
+#facebook,
+#twitter,
+#instagram,
+#snapchat {
+  padding: 13px;
+  font-size: 30px;
+  width: 64px;
+  text-decoration: none;
+  margin: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+.fa-facebook {
+  background: black;
+  color: white;
+}
+.fa-twitter {
+  background: black;
+  color: white;
+}
+.fa-instagram {
+  background: black;
+  color: white;
+}
+.fa-snapchat {
+  background: black;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+footer {
+  display: grid;
+  grid-area: 13/8/13/14;
 }
