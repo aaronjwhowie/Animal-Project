@@ -34,13 +34,13 @@
     background: #ffffffa3;
   }
   img {
-    margin-left: 148px;
+    margin-left: 110px;
     border: black solid 1px;
     border-radius: 250px;
     background: linear-gradient(#86bcfa, #3a92f6, #5eec59);
     background-attachment: fixed;
-    height: 40vh;
-    width: 40vw;
+    height: 300px;
+    width: 300px;
     margin-top: -94px;
     margin-bottom: -70px;
   }
