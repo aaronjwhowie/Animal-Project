@@ -152,13 +152,20 @@ form input {
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
   padding: 10px;
-  font-size: 15px;
-  margin-left: 125px;
+  font-size: 18px;
+  margin-left: 150px;
+  width: 100px;
 }
 
+.center-box {
+  margin-left: 150px;
+}
+.center-box2 {
+  margin-left: 60px;
+}
 /* Header */
 .RCH {
-  margin-left: 175px;
+  margin-left: 200px;
 }
 
 .left-h1 {
@@ -171,4 +178,48 @@ form input {
 .nv-l {
   margin-right: 188px;
   font-size: 30px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 500px) {
+  * {
+    font-size: 5px;
+  }
+
+  /* img {
+    margin-left: 70px;
+    border: black solid 1px;
+    border-radius: 250px;
+    background: linear-gradient(#86bcfa, #3a92f6, #5eec59);
+    background-attachment: fixed;
+    height: 40vh;
+    width: 40vw;
+  } */
+
+  .display {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(11, 12%);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .header {
+    display: grid;
+    grid-area: 1 / 14 / 1 / 1;
+    border-bottom: black solid 2px;
+  }
+
+  .left {
+    display: grid;
+    grid-area: 2 / 1 / 13 / 8;
+    background: #ffffffa3;
+  }
+
+  .right {
+    display: grid;
+    grid-area: 4 / 8 / 11 / 13;
+    align-content: space-between;
+    border-radius: 14px;
+  }
 }
