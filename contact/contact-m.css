@@ -1,5 +1,5 @@
 /* Media Queries */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 420px) {
   * {
     font-family: "Nunito", sans-serif;
   }
@@ -16,7 +16,7 @@
 
   .display {
     display: grid;
-    grid-template-columns: repeat(9, 12%);
+    grid-template-columns: repeat(9, 14%);
     grid-template-rows: repeat(23, 6%);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -24,7 +24,7 @@
 
   .header {
     display: grid;
-    grid-area: 1 / 1 / 3 / 10;
+    grid-area: 1 / 1 / 3 / 7;
     border-bottom: black solid 2px;
   }
 
@@ -34,7 +34,7 @@
     background: #ffffffa3;
   }
   img {
-    margin-left: 110px;
+    margin-left: 38px;
     border: black solid 1px;
     border-radius: 250px;
     background: linear-gradient(#86bcfa, #3a92f6, #5eec59);
@@ -114,7 +114,7 @@
     text-decoration: none;
     list-style: none;
     padding: 10px;
-    font-size: 18px;
+    font-size: 13px;
   }
 
   #ul li a {
@@ -186,6 +186,7 @@
 
   .nv-l {
     font-size: 18px;
+    margin-left: 71px;
   }
 
   .socialmedia {
