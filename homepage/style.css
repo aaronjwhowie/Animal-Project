@@ -31,6 +31,7 @@ body {
   background-image: url(/homepage/images/index.jpeg);
   background-repeat: no-repeat;
   height: 90vh;
+  background-size: 100%;
 }
 
 /* Nav Bar */
@@ -125,6 +126,7 @@ h1 {
   margin: 15px;
   border-radius: 10px;
   text-align: center;
+  margin-left: 25px;
 }
 .fa-facebook {
   background: #00000080;
