@@ -1,131 +1,124 @@
 body {
-    background: linear-gradient(#86BCFA, #3A92F6, #5EEC59);
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
-    height: 100%;
+  background: linear-gradient(#86bcfa, #3a92f6, #5eec59);
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
 
 /* Navigation Bar */
 header li a {
-    display: flex;
-    flex-direction: row;
-    display: list-item;
-    list-style: none;
-    padding: 2px;
-    margin: 0px;
-    text-decoration: none;
-    color: rgb(44, 62, 13);
-    font-size: 50px;
-    font-family: 'Homemade Apple', cursive;
-    text-transform: capitalize;
-    
-  }
-  
-  ul {
-    display: list-item;
-    list-style: none;
-  }
-  
-  .link a:hover {
-    color: rgb(242 255 218);
-  }
-  
-  .link ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-  }
-  
-  .link ul li a {
-    padding: 5px;
-    margin: 13px;
-    text-decoration: none;
-    font-size: 30px;
-    color: rgb(44, 62, 13);
-    font-family: 'Nunito', sans-serif;
-    text-transform: lowercase;
-  }
-  
+  display: flex;
+  flex-direction: row;
+  display: list-item;
+  list-style: none;
+  padding: 2px;
+  margin: 0px;
+  text-decoration: none;
+  color: rgb(44, 62, 13);
+  font-size: 50px;
+  font-family: "Homemade Apple", cursive;
+  text-transform: capitalize;
+}
+
+ul {
+  display: list-item;
+  list-style: none;
+}
+
+.link a:hover {
+  color: rgb(242 255 218);
+}
+
+.link ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+.link ul li a {
+  padding: 5px;
+  margin: 13px;
+  text-decoration: none;
+  font-size: 30px;
+  color: rgb(44, 62, 13);
+  font-family: "Nunito", sans-serif;
+  text-transform: lowercase;
+}
+
 /* top bar */
 
+p {
+  color: black;
 
-
-
-p{ color: black;
-    
-font-size: 35px;
-
-
+  font-size: 35px;
 }
-.flexbox-container{
-    display: flex;
-    justify-content: center;
-    align-items: center; /* has to be used for columns instead of justify content! */
-    flex-direction: column;
+.flexbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* has to be used for columns instead of justify content! */
+  flex-direction: column;
 }
 
 .flexbox-item {
-    align-content: stretch;
-    width: 1000px;
-    margin: 10px;
-    border: 3px solid black;
-    background: #86BCFA;
+  align-content: stretch;
+  width: 1000px;
+  margin: 10px;
+  border: 3px solid black;
+  background: #86bcfa;
 }
 
-.flexbox-item1{
-    contain: content;
-    padding: 20px;
-    min-height: 450px;
+.flexbox-item1 {
+  contain: content;
+  padding: 20px;
+  min-height: 450px;
 }
 
-.flexbox-item2{
-    contain: content;
-    padding: 20px;
-    min-height: 500px;
+.flexbox-item2 {
+  contain: content;
+  padding: 20px;
+  min-height: 500px;
 }
 
-img{
-
-   padding: 10x;
-    max-width: 100%;  
-    height: auto;  
+img {
+  padding: 10x;
+  max-width: 100%;
+  height: auto;
 }
 
 .socialmedia {
-    text-align: center;
-  }
-  #facebook,
-  #twitter,
-  #instagram,
-  #snapchat
-  {
-    padding: 13px;
-    font-size: 30px;
-    width: 64px;
-    text-decoration: none;
-    margin: 15px;
-    border-radius: 10px;
-    text-align: center;
-  }
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-  .fa-instagram {
-    background: rebeccapurple;
-    color: white;
-  }
-  .fa-snapchat {
-    background: #FFFC00;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  }
+  text-align: center;
+}
+#facebook,
+#twitter,
+#instagram,
+#snapchat {
+  padding: 13px;
+  font-size: 30px;
+  width: 64px;
+  text-decoration: none;
+  margin: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+.fa-facebook {
+  background: #00000080;
+  color: white;
+}
+.fa-twitter {
+  background: #00000080;
+  color: white;
+}
+.fa-instagram {
+  background: #00000080;
+  color: white;
+}
+.fa-snapchat {
+  background: #00000080;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

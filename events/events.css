@@ -177,22 +177,19 @@ button:hover {
 }
 
 .fa-facebook {
-  background: #3b5998;
+  background: #00000080;
   color: white;
 }
-
 .fa-twitter {
-  background: #55acee;
+  background: #00000080;
   color: white;
 }
-
 .fa-instagram {
-  background: rebeccapurple;
+  background: #00000080;
   color: white;
 }
-
 .fa-snapchat {
-  background: #fffc00;
+  background: #00000080;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
