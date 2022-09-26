@@ -1,5 +1,6 @@
 * {
   font-family: "Nunito", sans-serif;
+  color: white;
 }
 /* Body Styling */
 
@@ -22,7 +23,7 @@ body {
 .header {
   display: grid;
   grid-area: 1 / 14 / 1 / 1;
-  border-bottom: black solid 2px;
+  border-bottom: white solid 2px;
 }
 
 .left {
@@ -41,6 +42,7 @@ img {
 .pull {
   font-size: 24px;
   text-align: center;
+  color: black;
 }
 
 .right {
@@ -76,7 +78,7 @@ body {
 a {
   text-decoration: none;
   list-style: none;
-  color: black;
+  color: white;
 }
 
 #ul {
@@ -176,6 +178,7 @@ form input {
   font-size: 34px;
   font-weight: 100;
   margin-left: 123px;
+  color: black;
 }
 
 .nv-l {
@@ -216,8 +219,8 @@ form input {
 .fa-snapchat {
   background: #00000080;
   color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
 footer {
   display: grid;
   grid-area: 13/8/13/14;
