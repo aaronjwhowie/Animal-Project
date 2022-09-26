@@ -3,6 +3,7 @@
 
   * {
     font-family: "Nunito", sans-serif;
+    max-width: 820px;
   }
 
   body {
@@ -16,7 +17,7 @@
 
   .display {
     display: grid;
-    grid-template-columns: repeat(13, 1fr);
+    grid-template-columns: repeat(12, 7%);
     grid-template-rows: repeat(11, 12%);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -32,6 +33,7 @@
     background-image: url(/homepage/images/index.jpeg);
     background-repeat: no-repeat;
     height: 90vh;
+    background-size: 220%;
   }
 
   /* Nav Bar */
@@ -59,14 +61,14 @@
   .header-color {
     color: rgb(255, 255, 255);
   }
+
   nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: right;
+    justify-content: center;
     align-items: stretch;
     align-content: stretch;
-    margin-top: -30px;
     margin-right: 50px;
   }
 
@@ -74,7 +76,7 @@
     text-decoration: none;
     list-style: none;
     padding: 10px;
-    font-size: 23px;
+    font-size: 31px;
     font-weight: 1000;
   }
 
@@ -85,28 +87,32 @@
   }
 
   .nv-l {
-    margin-left: 50px;
-    font-size: 27px;
+    margin-left: 120px;
+    font-size: 40px;
     margin-top: 15px;
-    margin-bottom: -15px;
+    margin-bottom: 50px;
     color: white;
   }
 
   /* Body */
   .section {
-    grid-area: 3/5/3/10;
+    grid-area: 3/3/3/10;
     color: white;
     text-align: center;
     font-size: 20px;
+    width: 580px;
   }
 
   h1 {
     font-family: "Shadows Into Light", cursive;
-    font-size: 50px;
+    font-size: 80px;
     margin-top: -30px;
     margin-bottom: 50px;
   }
 
+  h2 {
+    font-size: 40px;
+  }
   .button {
     border: white solid 2px;
     border-radius: 30px;
@@ -119,14 +125,15 @@
   #twitter,
   #instagram,
   #snapchat {
-    padding: 13px;
-    font-size: 30px;
+    padding: 25px;
+    font-size: 64px;
     width: 64px;
     text-decoration: none;
     margin: 15px;
-    border-radius: 10px;
+    border-radius: 33px;
     text-align: center;
   }
+
   .fa-facebook {
     background: #00000080;
     color: white;
@@ -147,6 +154,7 @@
 
   footer {
     display: grid;
-    grid-area: 10/5/11/13;
+    grid-area: 10/1/10/14;
+    margin-left: 120px;
   }
 }
